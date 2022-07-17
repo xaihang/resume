@@ -1,83 +1,94 @@
+body {
+  background-color: #FFF2E6;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 10% 15%;
+}
 
-body{
-    background-color: #FFF2E6;
-    font-family: Verdana, Geneva, sans-serif;
-    margin: 10% 15%;
-  }
-  
-  img {
-    border-radius: 50%; width: 50%;
-     margin-left: 37%; width: 250px; 
-  }
-     
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.header {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+
+}
+
+.content {
+  width: 100%;
+
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FFD9B3;
+  -webkit-box-shadow: 5px 5px 0px 0px #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  font-size: 25px;
+  margin-top: 30px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+img {
+  border-radius: 50%;
+  width: 50%;
+  width: 250px;
+}
+
+.button {
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 4%;
+}
+
+.button-wrapper {
+  padding: 20px;
+}
+
+.button:after {
+  content: "";
+  background-color: #FFD9B3;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
   .button {
-    font-size: 16px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 20px 13px;
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin-left: 42%;
-    width: 4%;
+    padding: 13px 50px 13px;
   }
-  
-  .button:after {
-    content: "";
-    background-color: #ffe54c;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-  }
-  
-  .button:hover:after {
-    top: 0px;
-    left: 0px;
-  }
-  
-  @media (min-width: 768px) {
-    .button {
-      padding: 13px 50px 13px;
-    }
-  }
-  
-    
-  
-  .personalinfo{
-    text-align: center;
-  }
-  
-  .profile{
-    text-transform: uppercase;  
-    background-color: #FFD9B3;
-    -webkit-box-shadow: 5px 5px 0px 0px #000000; 
-    box-shadow: 5px 5px 0px 0px #000000;
-  }
-  
-  .work{
-    text-transform: uppercase;
-    background-color: #FFD9B3;
-    -webkit-box-shadow: 5px 5px 0px 0px #000000; 
-    box-shadow: 5px 5px 0px 0px #000000;
-  }
-  
-  .hobbies{
-      text-transform: uppercase;
-    background-color: #FFD9B3;
-    -webkit-box-shadow: 5px 5px 0px 0px #000000; 
-    box-shadow: 5px 5px 0px 0px #000000;
-  }
-  
-  
-  
-  
-  
+}
+
+
+.personalinfo {
+  text-align: center;
+}
+
+
